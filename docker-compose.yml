@@ -1,13 +1,11 @@
 version: '2'
 services:
   php:
-    image: 1maa/php-cli:7.0-xdebug
-    ports:
-      - "6666:22"
+    image: 1maa/php-dev:7.2
     volumes:
       - .:/root/wabbit
     working_dir: /root/wabbit
   rabbitmq:
-    image: rabbitmq:3.6
+    image: rabbitmq:3.7-management-alpine
     ports:
-      - "5672:5672"
+      - "15672:15672"

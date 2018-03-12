@@ -4,6 +4,6 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php-amqplib/php-amqplib": "^2.6"
+        "php-amqplib/php-amqplib": "^2.7"
     }
 }
