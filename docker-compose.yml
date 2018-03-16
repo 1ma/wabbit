@@ -1,11 +1,7 @@
-version: '2'
+version: "3"
 services:
-  php:
-    image: 1maa/php-dev:7.2
-    volumes:
-      - .:/root/wabbit
-    working_dir: /root/wabbit
   rabbitmq:
     image: rabbitmq:3.7-management-alpine
     ports:
-      - "15672:15672"
+      - "127.0.0.1:5672:5672"
+      - "127.0.0.1:15672:15672"
